@@ -1,53 +1,85 @@
-<footer>
-  <div class="container">
-    <div class="row">
-      <?php if ($informations) { ?>
-      <div class="col-sm-3">
-        <h5><?php echo $text_information; ?></h5>
-        <ul class="list-unstyled">
-          <?php foreach ($informations as $information) { ?>
-          <li><a href="<?php echo $information['href']; ?>"><?php echo $information['title']; ?></a></li>
-          <?php } ?>
-        </ul>
-      </div>
-      <?php } ?>
-      <div class="col-sm-3">
-        <h5><?php echo $text_service; ?></h5>
-        <ul class="list-unstyled">
-          <li><a href="<?php echo $contact; ?>"><?php echo $text_contact; ?></a></li>
-          <li><a href="<?php echo $return; ?>"><?php echo $text_return; ?></a></li>
-          <li><a href="<?php echo $sitemap; ?>"><?php echo $text_sitemap; ?></a></li>
-        </ul>
-      </div>
-      <div class="col-sm-3">
-        <h5><?php echo $text_extra; ?></h5>
-        <ul class="list-unstyled">
-          <li><a href="<?php echo $manufacturer; ?>"><?php echo $text_manufacturer; ?></a></li>
-          <li><a href="<?php echo $voucher; ?>"><?php echo $text_voucher; ?></a></li>
-          <li><a href="<?php echo $affiliate; ?>"><?php echo $text_affiliate; ?></a></li>
-          <li><a href="<?php echo $special; ?>"><?php echo $text_special; ?></a></li>
-        </ul>
-      </div>
-      <div class="col-sm-3">
-        <h5><?php echo $text_account; ?></h5>
-        <ul class="list-unstyled">
-          <li><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a></li>
-          <li><a href="<?php echo $order; ?>"><?php echo $text_order; ?></a></li>
-          <li><a href="<?php echo $wishlist; ?>"><?php echo $text_wishlist; ?></a></li>
-          <li><a href="<?php echo $newsletter; ?>"><?php echo $text_newsletter; ?></a></li>
-        </ul>
       </div>
     </div>
-    <hr>
-    <p><?php echo $powered; ?></p>
   </div>
-</footer>
+  
+  <footer>
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-12 col-xl-8 offset-xl-3">
+                  <div class="footer__top">
+                    <?php if ($footer_categories) { ?>
+                      <ul class="bottom__menu d-flex align-content-center">
+                        <?php foreach($footer_categories as $footer){ ?>
+                            <li><a href="<?php echo $footer['href']; ?>"><?php echo $footer['name']; ?></a></li>
+                        <?php } ?>
+                      </ul>
+                    <?php } ?>
+                  </div>
+                  <div class="footer__bottom">
+                      <div class="footer__contacts">
+                          <?php echo $schedule; ?>
+                      </div>
+                      <div class="footer__power">
+                          <?php echo $powered; ?>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+</div>
 
-<!--
-OpenCart is open source software and you are free to remove the powered by OpenCart if you want, but its generally accepted practise to make a small donation.
-Please donate via PayPal to donate@opencart.com
-//-->
+<!-- The desktop menu -->
+<?php if ($categories) { ?>
+<div class="d-none d-xl-block col-xl-3 p-0 menu__left">
+  <nav id="nav" style="display: none;">
+      <div class="title__block">Категории товаров:</div>
+      <ul>
+        <?php foreach ($categories as $category) { ?>
+        <?php if ($category['children']) { ?>
+          <li class="dropdown__parent">
+              <a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a>
+              <?php foreach (array_chunk($category['children'], ceil(count($category['children']) / $category['column'])) as $children) { ?>
+                <ul class="dropdown__menu">
+                  <?php foreach ($children as $child) { ?>
+                    <li><a href="<?php echo $child['href']; ?>"><?php echo $child['name']; ?></a></li>
+                  <?php } ?>
+                </ul>
+              <?php } ?>
+          </li>
+        <?php } else { ?>
+          <li><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a></li>
+        <?php } ?>
+        <?php } ?>
+        <li class="action__li"><a href="<?php echo $special; ?>"><?php echo $text_special; ?></a></li>
+      </ul>
+  </nav>
+</div>
+<?php } ?>
 
-<!-- Theme created by Welford Media for OpenCart 2.0 www.welfordmedia.co.uk -->
-
-</body></html>
+<!-- The mobile menu -->
+<nav id="menu">
+    <ul>
+      <?php if ($categories) { ?>
+      <?php foreach ($categories as $category) { ?>
+      <?php if ($category['children']) { ?>
+      <li>
+        <a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a>
+        <?php foreach (array_chunk($category['children'], ceil(count($category['children']) / $category['column'])) as $children) { ?>
+        <ul>
+          <?php foreach ($children as $child) { ?>
+            <li><a href="<?php echo $child['href']; ?>"><?php echo $child['name']; ?></a></li>
+          <?php } ?>
+        </ul>
+        <?php } ?>
+      </li>
+      <?php } else { ?>
+      <li><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a></li>
+      <?php } ?>
+      <?php } ?>
+      <?php } ?>
+      <li class="action__li"><a href="<?php echo $special; ?>"><?php echo $text_special; ?></a></li>
+    </ul>
+</nav>
+</body>
+</html>

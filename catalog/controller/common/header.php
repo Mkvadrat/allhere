@@ -89,8 +89,9 @@ class ControllerCommonHeader extends Controller {
 		$data['shopping_cart'] = $this->url->link('checkout/cart');
 		$data['checkout'] = $this->url->link('checkout/checkout', '', true);
 		$data['contact'] = $this->url->link('information/contact');
-		$data['telephone'] = $this->config->get('config_telephone');
-
+		$data['telephone'] = html_entity_decode($this->config->get('config_telephone'), ENT_QUOTES, 'UTF-8');
+		$data['address'] = html_entity_decode($this->config->get('config_address'), ENT_QUOTES, 'UTF-8');
+		
 		// Menu
 		$this->load->model('design/custommenu');
 		$this->load->model('catalog/category');

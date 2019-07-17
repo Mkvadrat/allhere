@@ -1,0 +1,390 @@
+2019-07-12 15:40:40 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 46
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 54
+LINE: 113
+LINE: 125
+LINE: 170
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 28
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 43
+LINE: 45
+LINE: 54
+LINE: 56
+LINE: 65
+LINE: 67
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 29
+----------------------------------------------------------------
+MOD: CMS
+
+FILE: catalog/view/theme/default/template/common/header.tpl
+CODE: <base href="<?php echo $base; ?>" />
+LINE: 14
+
+FILE: catalog/view/theme/here/template/common/header.tpl
+CODE: <base href="<?php echo $base; ?>" />
+LINE: 14
+
+FILE: catalog/view/theme/default/template/common/footer.tpl
+CODE: <li><a href="<?php echo $special; ?>"><?php echo $text_special; ?></a></li>
+LINE: 29
+
+FILE: catalog/view/theme/here/template/common/footer.tpl
+CODE: <li><a href="<?php echo $special; ?>"><?php echo $text_special; ?></a></li>
+LINE: 29
+----------------------------------------------------------------
+MOD: 
+
+FILE: admin/controller/common/filemanager.php
+CODE: jpg,jpeg,png,gif,JPG,JPEG,PNG,GIF
+LINE: 52
+CODE: 'jpg',
+LINE: 260
+CODE: 'image/jpeg',
+LINE: 274
+
+FILE: admin/model/tool/image.php
+CODE: $extension = pathinfo($filename, PATHINFO_EXTENSION);
+LINE: 12
+
+FILE: system/helper/general.php
+CODE: function token($length = 32) {
+LINE: 6
+
+FILE: catalog/controller/common/header.php
+CODE: $data['logo'] = $server . 'image/' . $this->config->get('config_logo');
+LINE: 46
+
+FILE: catalog/controller/common/footer.php
+CODE: return $this->load->view('common/footer', $data);
+LINE: 85
+----------------------------------------------------------------
+2019-07-12 15:40:48 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 46
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 54
+LINE: 113
+LINE: 125
+LINE: 170
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 28
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 43
+LINE: 45
+LINE: 54
+LINE: 56
+LINE: 65
+LINE: 67
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 29
+----------------------------------------------------------------
+MOD: CMS
+
+FILE: catalog/view/theme/default/template/common/header.tpl
+CODE: <base href="<?php echo $base; ?>" />
+LINE: 14
+
+FILE: catalog/view/theme/here/template/common/header.tpl
+CODE: <base href="<?php echo $base; ?>" />
+LINE: 14
+
+FILE: catalog/view/theme/default/template/common/footer.tpl
+CODE: <li><a href="<?php echo $special; ?>"><?php echo $text_special; ?></a></li>
+LINE: 29
+
+FILE: catalog/view/theme/here/template/common/footer.tpl
+CODE: <li><a href="<?php echo $special; ?>"><?php echo $text_special; ?></a></li>
+LINE: 29
+----------------------------------------------------------------
+MOD: 
+
+FILE: admin/controller/common/filemanager.php
+CODE: jpg,jpeg,png,gif,JPG,JPEG,PNG,GIF
+LINE: 52
+CODE: 'jpg',
+LINE: 260
+CODE: 'image/jpeg',
+LINE: 274
+
+FILE: admin/model/tool/image.php
+CODE: $extension = pathinfo($filename, PATHINFO_EXTENSION);
+LINE: 12
+
+FILE: system/helper/general.php
+CODE: function token($length = 32) {
+LINE: 6
+
+FILE: catalog/controller/common/header.php
+CODE: $data['logo'] = $server . 'image/' . $this->config->get('config_logo');
+LINE: 46
+
+FILE: catalog/controller/common/footer.php
+CODE: return $this->load->view('common/footer', $data);
+LINE: 85
+----------------------------------------------------------------
+2019-07-12 15:40:49 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 46
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 54
+LINE: 113
+LINE: 125
+LINE: 170
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 28
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 43
+LINE: 45
+LINE: 54
+LINE: 56
+LINE: 65
+LINE: 67
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 29
+----------------------------------------------------------------
+MOD: CMS
+
+FILE: catalog/view/theme/default/template/common/header.tpl
+CODE: <base href="<?php echo $base; ?>" />
+LINE: 14
+
+FILE: catalog/view/theme/here/template/common/header.tpl
+CODE: <base href="<?php echo $base; ?>" />
+LINE: 14
+
+FILE: catalog/view/theme/default/template/common/footer.tpl
+CODE: <li><a href="<?php echo $special; ?>"><?php echo $text_special; ?></a></li>
+LINE: 29
+
+FILE: catalog/view/theme/here/template/common/footer.tpl
+CODE: <li><a href="<?php echo $special; ?>"><?php echo $text_special; ?></a></li>
+LINE: 29
+----------------------------------------------------------------
+MOD: 
+
+FILE: admin/controller/common/filemanager.php
+CODE: jpg,jpeg,png,gif,JPG,JPEG,PNG,GIF
+LINE: 52
+CODE: 'jpg',
+LINE: 260
+CODE: 'image/jpeg',
+LINE: 274
+
+FILE: admin/model/tool/image.php
+CODE: $extension = pathinfo($filename, PATHINFO_EXTENSION);
+LINE: 12
+
+FILE: system/helper/general.php
+CODE: function token($length = 32) {
+LINE: 6
+
+FILE: catalog/controller/common/header.php
+CODE: $data['logo'] = $server . 'image/' . $this->config->get('config_logo');
+LINE: 46
+
+FILE: catalog/controller/common/footer.php
+CODE: return $this->load->view('common/footer', $data);
+LINE: 85
+----------------------------------------------------------------
+2019-07-12 15:40:59 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 46
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 54
+LINE: 113
+LINE: 125
+LINE: 170
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 28
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 43
+LINE: 45
+LINE: 54
+LINE: 56
+LINE: 65
+LINE: 67
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 29
+----------------------------------------------------------------
+MOD: CMS
+
+FILE: catalog/view/theme/default/template/common/header.tpl
+CODE: <base href="<?php echo $base; ?>" />
+LINE: 14
+
+FILE: catalog/view/theme/here/template/common/header.tpl
+CODE: <base href="<?php echo $base; ?>" />
+LINE: 14
+
+FILE: catalog/view/theme/default/template/common/footer.tpl
+CODE: <li><a href="<?php echo $special; ?>"><?php echo $text_special; ?></a></li>
+LINE: 29
+
+FILE: catalog/view/theme/here/template/common/footer.tpl
+CODE: <li><a href="<?php echo $special; ?>"><?php echo $text_special; ?></a></li>
+LINE: 29
+----------------------------------------------------------------
+2019-07-16 10:57:48 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 46
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 54
+LINE: 113
+LINE: 125
+LINE: 170
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 28
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 43
+LINE: 45
+LINE: 54
+LINE: 56
+LINE: 65
+LINE: 67
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 29
+----------------------------------------------------------------
+MOD: CMS
+
+FILE: catalog/view/theme/default/template/common/header.tpl
+CODE: <base href="<?php echo $base; ?>" />
+LINE: 14
+
+FILE: catalog/view/theme/here/template/common/header.tpl
+CODE: <base href="<?php echo $base; ?>" />
+LINE: 14
+
+FILE: catalog/view/theme/default/template/common/footer.tpl
+CODE: <li><a href="<?php echo $special; ?>"><?php echo $text_special; ?></a></li>
+LINE: 29
+
+FILE: catalog/view/theme/here/template/common/footer.tpl
+CODE: <li><a href="<?php echo $special; ?>"><?php echo $text_special; ?></a></li>
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+2019-07-16 16:57:38 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 46
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 54
+LINE: 113
+LINE: 125
+LINE: 170
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 28
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 43
+LINE: 45
+LINE: 54
+LINE: 56
+LINE: 65
+LINE: 67
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 29
+----------------------------------------------------------------
+MOD: CMS
+
+FILE: catalog/view/theme/default/template/common/header.tpl
+CODE: <base href="<?php echo $base; ?>" />
+LINE: 14
+
+FILE: catalog/view/theme/here/template/common/header.tpl
+CODE: <base href="<?php echo $base; ?>" />
+LINE: 14
+
+FILE: catalog/view/theme/default/template/common/footer.tpl
+CODE: <li><a href="<?php echo $special; ?>"><?php echo $text_special; ?></a></li>
+LINE: 29
+
+FILE: catalog/view/theme/here/template/common/footer.tpl
+CODE: <li><a href="<?php echo $special; ?>"><?php echo $text_special; ?></a></li>
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------

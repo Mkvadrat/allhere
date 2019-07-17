@@ -1,0 +1,10 @@
+2019-07-12 15:31:07 - PHP Notice:  Undefined variable: error_meta_title in D:\OpenServer\domains\all-here.loc\admin\view\template\setting\setting.tpl on line 49
+2019-07-12 15:31:12 - PHP Notice:  Undefined variable: error_meta_title in D:\OpenServer\domains\all-here.loc\admin\view\template\setting\setting.tpl on line 49
+2019-07-12 15:40:40 - PHP Notice:  Trying to get property of non-object in D:\OpenServer\domains\all-here.loc\admin\controller\extension\modification.php on line 151
+2019-07-12 15:40:48 - PHP Notice:  Trying to get property of non-object in D:\OpenServer\domains\all-here.loc\admin\controller\extension\modification.php on line 151
+2019-07-12 15:40:49 - PHP Notice:  Trying to get property of non-object in D:\OpenServer\domains\all-here.loc\admin\controller\extension\modification.php on line 151
+2019-07-16 16:20:08 - PHP Notice:  Undefined index: search in D:\OpenServer\domains\all-here.loc\catalog\controller\common\search.php on line 16
+2019-07-16 16:20:12 - PHP Notice:  Undefined index: search in D:\OpenServer\domains\all-here.loc\catalog\controller\common\search.php on line 16
+2019-07-16 16:38:29 - PHP Notice:  Undefined variable: text_search in D:\OpenServer\domains\all-here.loc\catalog\view\theme\here\template\common\header.tpl on line 115
+2019-07-16 16:38:32 - PHP Notice:  Undefined variable: text_search in D:\OpenServer\domains\all-here.loc\catalog\view\theme\here\template\common\header.tpl on line 115
+2019-07-16 17:43:42 - PHP Notice:  Undefined variable: text_items in D:\OpenServer\domains\all-here.loc\catalog\view\theme\here\template\common\cart.tpl on line 3

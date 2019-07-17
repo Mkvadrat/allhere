@@ -112,13 +112,35 @@
                   <?php } ?>
                 </div>
               </div>
-              <div class="form-group required">
-                <label class="col-sm-2 control-label" for="input-address"><?php echo $entry_address; ?></label>
+               <div class="form-group">
+                <label class="col-sm-2 control-label" for="input-address">Адрес (Шапка сайта)</label>
                 <div class="col-sm-10">
-                  <textarea name="config_address" placeholder="<?php echo $entry_address; ?>" rows="5" id="input-address" class="form-control"><?php echo $config_address; ?></textarea>
-                  <?php if ($error_address) { ?>
+                  <textarea name="config_address" placeholder="Адрес (Шапка сайта)" rows="5" id="input-address" class="form-control summernote"><?php echo $config_address; ?></textarea>
+                  <?php /*if ($error_address) { ?>
                   <div class="text-danger"><?php echo $error_address; ?></div>
-                  <?php } ?>
+                  <?php }*/ ?>
+                </div>
+              </div>
+              <div class="form-group required">
+                <label class="col-sm-2 control-label" for="input-telephone">Телефон (Шапка сайта)</label>
+                <div class="col-sm-10">
+                  <textarea name="config_telephone" placeholder="Телефон (Шапка сайта)" rows="5" id="input-telephone" class="form-control summernote"><?php echo $config_telephone; ?></textarea>
+                  <!--<input type="text" name="config_telephone" value="<?php //echo $config_telephone; ?>" placeholder="<?php //echo $entry_telephone; ?>" id="input-telephone" class="form-control" />-->
+                  <?php /*if ($error_telephone) { ?>
+                  <div class="text-danger"><?php echo $error_telephone; ?></div>
+                  <?php }*/ ?>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label" for="input-schedule">Телефон и режим работы (Подвал сайта)</label>
+                <div class="col-sm-10">
+                  <textarea name="config_schedule" placeholder="Телефон и режим работы (Подвал сайта)" rows="5" id="input-schedule" class="form-control summernote"><?php echo $config_schedule; ?></textarea>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label" for="input-powered">Powered (Подвал сайта)</label>
+                <div class="col-sm-10">
+                  <textarea name="config_powered" placeholder="Powered (Подвал сайта)" rows="5" id="input-powered" class="form-control summernote"><?php echo $config_powered; ?></textarea>
                 </div>
               </div>
               <div class="form-group">
@@ -133,15 +155,6 @@
                   <input type="text" name="config_email" value="<?php echo $config_email; ?>" placeholder="<?php echo $entry_email; ?>" id="input-email" class="form-control" />
                   <?php if ($error_email) { ?>
                   <div class="text-danger"><?php echo $error_email; ?></div>
-                  <?php } ?>
-                </div>
-              </div>
-              <div class="form-group required">
-                <label class="col-sm-2 control-label" for="input-telephone"><?php echo $entry_telephone; ?></label>
-                <div class="col-sm-10">
-                  <input type="text" name="config_telephone" value="<?php echo $config_telephone; ?>" placeholder="<?php echo $entry_telephone; ?>" id="input-telephone" class="form-control" />
-                  <?php if ($error_telephone) { ?>
-                  <div class="text-danger"><?php echo $error_telephone; ?></div>
                   <?php } ?>
                 </div>
               </div>
@@ -1431,6 +1444,9 @@
       </div>
     </div>
   </div>
+  <script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>
+  <link href="view/javascript/summernote/summernote.css" rel="stylesheet" />
+  <script type="text/javascript" src="view/javascript/summernote/opencart.js"></script>
   <script type="text/javascript"><!--
 $('select[name=\'config_theme\']').on('change', function() {
 	$.ajax({

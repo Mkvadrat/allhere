@@ -252,11 +252,11 @@ class ControllerSettingSetting extends Controller {
 			$data['error_owner'] = '';
 		}
 
-		if (isset($this->error['address'])) {
+		/*if (isset($this->error['address'])) {
 			$data['error_address'] = $this->error['address'];
 		} else {
 			$data['error_address'] = '';
-		}
+		}*/
 
 		if (isset($this->error['email'])) {
 			$data['error_email'] = $this->error['email'];
@@ -264,11 +264,11 @@ class ControllerSettingSetting extends Controller {
 			$data['error_email'] = '';
 		}
 
-		if (isset($this->error['telephone'])) {
+		/*if (isset($this->error['telephone'])) {
 			$data['error_telephone'] = $this->error['telephone'];
 		} else {
 			$data['error_telephone'] = '';
-		}
+		}*/
 
 		if (isset($this->error['meta_title'])) {
 			$data['error_meta_title'] = $this->error['meta_title'];
@@ -486,6 +486,18 @@ class ControllerSettingSetting extends Controller {
 			$data['config_telephone'] = $this->request->post['config_telephone'];
 		} else {
 			$data['config_telephone'] = $this->config->get('config_telephone');
+		}
+		
+		if (isset($this->request->post['config_schedule'])) {
+			$data['config_schedule'] = $this->request->post['config_schedule'];
+		} else {
+			$data['config_schedule'] = $this->config->get('config_schedule');
+		}
+		
+		if (isset($this->request->post['config_powered'])) {
+			$data['config_powered'] = $this->request->post['config_powered'];
+		} else {
+			$data['config_powered'] = $this->config->get('config_powered');
 		}
 
 		if (isset($this->request->post['config_fax'])) {
@@ -1181,17 +1193,17 @@ class ControllerSettingSetting extends Controller {
 			$this->error['owner'] = $this->language->get('error_owner');
 		}
 
-		if ((utf8_strlen($this->request->post['config_address']) < 3) || (utf8_strlen($this->request->post['config_address']) > 256)) {
+		/*if ((utf8_strlen($this->request->post['config_address']) < 3) || (utf8_strlen($this->request->post['config_address']) > 256)) {
 			$this->error['address'] = $this->language->get('error_address');
-		}
+		}*/
 
 		if ((utf8_strlen($this->request->post['config_email']) > 96) || !filter_var($this->request->post['config_email'], FILTER_VALIDATE_EMAIL)) {
 			$this->error['email'] = $this->language->get('error_email');
 		}
 
-		if ((utf8_strlen($this->request->post['config_telephone']) < 3) || (utf8_strlen($this->request->post['config_telephone']) > 32)) {
+		/*if ((utf8_strlen($this->request->post['config_telephone']) < 3) || (utf8_strlen($this->request->post['config_telephone']) > 32)) {
 			$this->error['telephone'] = $this->language->get('error_telephone');
-		}
+		}*/
 
 		if (!empty($this->request->post['config_customer_group_display']) && !in_array($this->request->post['config_customer_group_id'], $this->request->post['config_customer_group_display'])) {
 			$this->error['customer_group_display'] = $this->language->get('error_customer_group_display');
