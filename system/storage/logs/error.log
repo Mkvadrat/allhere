@@ -34,3 +34,4 @@
 2019-07-17 14:37:30 - PHP Warning:  Invalid argument supplied for foreach() in D:\OpenServer\domains\all-here.loc\system\engine\loader.php on line 58
 2019-07-17 14:38:29 - PHP Warning:  Invalid argument supplied for foreach() in D:\OpenServer\domains\all-here.loc\system\engine\loader.php on line 58
 2019-07-17 14:39:54 - PHP Warning:  Invalid argument supplied for foreach() in D:\OpenServer\domains\all-here.loc\system\engine\loader.php on line 58
+2019-07-17 15:26:46 - PHP Notice:  Undefined index: separator in D:\OpenServer\domains\all-here.loc\catalog\view\theme\here\template\product\category.tpl on line 11
