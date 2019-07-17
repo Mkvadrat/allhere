@@ -10,14 +10,13 @@ document.addEventListener(
 );
 
 $(document).ready(function () {
-
-    $(".main__slider .owl-carousel").owlCarousel({
+    /*$(".main__slider .owl-carousel").owlCarousel({
         items: 1,
         nav: false,
         // autoplay: true,
         loop: true,
         autoplayTimeout: 4000
-    });
+    });*/
 
     $(".slider__products .owl-carousel").owlCarousel({
         items: 4,
@@ -49,7 +48,39 @@ $(document).ready(function () {
         dots: false,
         thumbsPrerendered: true
     });
-	
-
-
 });
+
+//callback form
+function sendForm() {
+    $.ajax({
+        url: 'index.php?route=extension/module/callback/sendForm',
+        type: 'post',
+        data: {
+            'name': $('#name').val(),
+            'phone': $('#phone').val(),
+            'message': $('#message').val(),
+        },
+        dataType: 'json',
+        success: function (data) {
+            if(data.success){
+                $(".warning").html('');
+                
+                $(".reset_input").val('');
+    
+                swal({
+                    title: data.success,
+                    text: "",
+                    timer: 1000,
+                    showConfirmButton: false
+                });
+    
+                $.fancybox.close();
+            }
+            
+            if(data.error){
+                var error = data.error;
+                $(".warning").html('<div class="warning">' + error.join("") + '</div>');
+            }
+        }
+    });
+}

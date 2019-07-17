@@ -24,6 +24,8 @@
 <link rel="stylesheet" href="/catalog/view/theme/here/css/owl.carousel.min.css">
 <link rel="stylesheet" href="/catalog/view/theme/here/css/custom.css">
 <link rel="stylesheet" href="/catalog/view/theme/here/css/media.css">
+<link rel="stylesheet" href="/catalog/view/theme/here/js/libs/fancybox-master/dist/jquery.fancybox.min.css">
+<link rel="stylesheet" href="/catalog/view/theme/here/css/sweetalert.css">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="/catalog/view/theme/here/js/bootstrap.js"></script>
@@ -31,6 +33,8 @@
 <script src="/catalog/view/theme/here/js/owl.carousel.min.js"></script>
 <script src="/catalog/view/theme/here/js/custom.js"></script>
 <script src="/catalog/view/theme/here/js/here.js"></script>
+<link rel="stylesheet" href="/catalog/view/theme/here/js/libs/fancybox-master/dist/jquery.fancybox.min.css">
+<script src="/catalog/view/theme/here/js/sweetalert.min.js" type="text/javascript"></script>
 
 <?php foreach ($styles as $style) { ?>
 <link href="<?php echo $style['href']; ?>" type="text/css" rel="<?php echo $style['rel']; ?>" media="<?php echo $style['media']; ?>" />
@@ -111,6 +115,9 @@
       <div class="row">
         <div class="col-12 col-xl-8 offset-xl-3">
           <div class="content__header">
+            
+            <div id="content"></div>
+            
             <?php echo $search; ?>
             
             <div class="login__block">

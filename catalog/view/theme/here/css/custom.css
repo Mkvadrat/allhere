@@ -1461,3 +1461,7 @@ table tr:last-child td {
     background-color: #fff;
     margin: 8px;
 }
+
+.alert-success{
+    margin-top: 20px;
+}

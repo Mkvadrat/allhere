@@ -8,3 +8,29 @@
 2019-07-16 16:38:29 - PHP Notice:  Undefined variable: text_search in D:\OpenServer\domains\all-here.loc\catalog\view\theme\here\template\common\header.tpl on line 115
 2019-07-16 16:38:32 - PHP Notice:  Undefined variable: text_search in D:\OpenServer\domains\all-here.loc\catalog\view\theme\here\template\common\header.tpl on line 115
 2019-07-16 17:43:42 - PHP Notice:  Undefined variable: text_items in D:\OpenServer\domains\all-here.loc\catalog\view\theme\here\template\common\cart.tpl on line 3
+2019-07-17 11:02:44 - PHP Notice:  Undefined index: description in D:\OpenServer\domains\all-here.loc\admin\model\design\banner.php on line 16
+2019-07-17 11:02:44 - PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OpenServer\domains\all-here.loc\admin\controller\startup\error.php:39) in D:\OpenServer\domains\all-here.loc\system\library\response.php on line 17
+2019-07-17 11:03:52 - PHP Notice:  Undefined index: desription in D:\OpenServer\domains\all-here.loc\admin\controller\design\banner.php on line 392
+2019-07-17 11:03:52 - PHP Notice:  Undefined index: description in D:\OpenServer\domains\all-here.loc\admin\view\template\design\banner_form.tpl on line 85
+2019-07-17 12:40:45 - PHP Warning:  Invalid argument supplied for foreach() in D:\OpenServer\domains\all-here.loc\system\storage\modification\system\engine\loader.php on line 58
+2019-07-17 12:44:07 - PHP Warning:  Invalid argument supplied for foreach() in D:\OpenServer\domains\all-here.loc\system\storage\modification\system\engine\loader.php on line 58
+2019-07-17 12:45:01 - PHP Warning:  Invalid argument supplied for foreach() in D:\OpenServer\domains\all-here.loc\system\storage\modification\system\engine\loader.php on line 58
+2019-07-17 12:45:41 - PHP Warning:  Invalid argument supplied for foreach() in D:\OpenServer\domains\all-here.loc\system\storage\modification\system\engine\loader.php on line 58
+2019-07-17 12:48:20 - PHP Warning:  Invalid argument supplied for foreach() in D:\OpenServer\domains\all-here.loc\system\storage\modification\system\engine\loader.php on line 58
+2019-07-17 12:49:58 - PHP Warning:  Invalid argument supplied for foreach() in D:\OpenServer\domains\all-here.loc\system\storage\modification\system\engine\loader.php on line 58
+2019-07-17 12:50:11 - PHP Warning:  Invalid argument supplied for foreach() in D:\OpenServer\domains\all-here.loc\system\storage\modification\system\engine\loader.php on line 58
+2019-07-17 12:51:53 - PHP Warning:  Invalid argument supplied for foreach() in D:\OpenServer\domains\all-here.loc\system\storage\modification\system\engine\loader.php on line 58
+2019-07-17 12:51:53 - PHP Notice:  Undefined variable: phe in D:\OpenServer\domains\all-here.loc\catalog\controller\extension\module\callback.php on line 39
+2019-07-17 12:51:53 - PHP Notice:  Undefined variable: phe in D:\OpenServer\domains\all-here.loc\catalog\controller\extension\module\callback.php on line 40
+2019-07-17 12:52:37 - PHP Notice:  Undefined variable: data in D:\OpenServer\domains\all-here.loc\catalog\controller\extension\module\callback.php on line 8
+2019-07-17 12:52:37 - PHP Warning:  Invalid argument supplied for foreach() in D:\OpenServer\domains\all-here.loc\system\storage\modification\system\engine\loader.php on line 88
+2019-07-17 12:52:41 - PHP Notice:  Undefined variable: data in D:\OpenServer\domains\all-here.loc\catalog\controller\extension\module\callback.php on line 8
+2019-07-17 12:52:41 - PHP Warning:  Invalid argument supplied for foreach() in D:\OpenServer\domains\all-here.loc\system\storage\modification\system\engine\loader.php on line 88
+2019-07-17 12:52:43 - PHP Notice:  Undefined variable: data in D:\OpenServer\domains\all-here.loc\catalog\controller\extension\module\callback.php on line 8
+2019-07-17 12:52:43 - PHP Warning:  Invalid argument supplied for foreach() in D:\OpenServer\domains\all-here.loc\system\storage\modification\system\engine\loader.php on line 88
+2019-07-17 12:52:44 - PHP Notice:  Undefined variable: data in D:\OpenServer\domains\all-here.loc\catalog\controller\extension\module\callback.php on line 8
+2019-07-17 12:52:44 - PHP Warning:  Invalid argument supplied for foreach() in D:\OpenServer\domains\all-here.loc\system\storage\modification\system\engine\loader.php on line 88
+2019-07-17 12:53:05 - PHP Warning:  Invalid argument supplied for foreach() in D:\OpenServer\domains\all-here.loc\system\storage\modification\system\engine\loader.php on line 58
+2019-07-17 14:37:30 - PHP Warning:  Invalid argument supplied for foreach() in D:\OpenServer\domains\all-here.loc\system\engine\loader.php on line 58
+2019-07-17 14:38:29 - PHP Warning:  Invalid argument supplied for foreach() in D:\OpenServer\domains\all-here.loc\system\engine\loader.php on line 58
+2019-07-17 14:39:54 - PHP Warning:  Invalid argument supplied for foreach() in D:\OpenServer\domains\all-here.loc\system\engine\loader.php on line 58
