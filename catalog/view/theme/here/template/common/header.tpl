@@ -125,15 +125,21 @@
             
             <div class="login__block">
                 <div class="wish__block">
-                    <a href="<?php echo $wishlist; ?>" id="wishlist-total" type="button" class="btn btn-circle"><img src="/catalog/view/theme/here/image/star.svg" alt="wish"/><span><?php echo $text_wishlist; ?></span></a>
+                  <div class="btn btn-circle">
+                    <img src="/catalog/view/theme/here/image/star.svg" alt="wish"/>
+                    <a href="<?php echo $wishlist; ?>" id="wishlist-total"><span><?php echo $text_wishlist; ?></span></a>
+                  </div>
                 </div>
                 <div class="log__block">
-                  <?php if ($logged) { ?>
-                  <a href="<?php echo $account; ?>" type="button" class="btn btn-circle"><img src="/catalog/view/theme/here/image/user.svg" alt="user"/><span>Личный кабинет</span></a>
-                  <a href="<?php echo $logout; ?>" type="button" class="btn btn-circle"><span><?php echo $text_logout; ?></span></a>
-                  <?php } else { ?>
-                  <a href="<?php echo $login; ?>" type="button" class="btn btn-circle"><img src="/catalog/view/theme/here/image/user.svg" alt="user"/><span>Войти</span></a>
-                  <?php } ?>
+                  <div class="btn btn-circle">
+                    <?php if ($logged) { ?>
+                      <img src="/catalog/view/theme/here/image/user.svg" alt="user"/>
+                      <a href="<?php echo $account; ?>"><span>Личный кабинет</span></a>/
+                      <a href="<?php echo $logout; ?>"><span><?php echo $text_logout; ?></span></a>
+                    <?php } else { ?>
+                      <a href="<?php echo $login; ?>"><span>Войти</span></a>
+                    <?php } ?>
+                  </div>
                 </div>
             </div>
             
