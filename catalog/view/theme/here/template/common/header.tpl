@@ -24,17 +24,21 @@
 <link rel="stylesheet" href="/catalog/view/theme/here/css/owl.carousel.min.css">
 <link rel="stylesheet" href="/catalog/view/theme/here/css/custom.css">
 <link rel="stylesheet" href="/catalog/view/theme/here/css/media.css">
-<link rel="stylesheet" href="/catalog/view/theme/here/js/libs/fancybox-master/dist/jquery.fancybox.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
 <link rel="stylesheet" href="/catalog/view/theme/here/css/sweetalert.css">
+<link href="catalog/view/javascript/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<link href="//fonts.googleapis.com/css?family=Open+Sans:400,400i,300,700" rel="stylesheet" type="text/css" />
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="/catalog/view/theme/here/js/bootstrap.js"></script>
 <script src="/catalog/view/theme/here/js/mmenu.js"></script>
 <script src="/catalog/view/theme/here/js/owl.carousel.min.js"></script>
+<script src="/catalog/view/theme/here/js/owl.carousel2.thumbs.min.js"></script>
 <script src="/catalog/view/theme/here/js/custom.js"></script>
 <script src="/catalog/view/theme/here/js/here.js"></script>
-<link rel="stylesheet" href="/catalog/view/theme/here/js/libs/fancybox-master/dist/jquery.fancybox.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 <script src="/catalog/view/theme/here/js/sweetalert.min.js" type="text/javascript"></script>
+
 
 <?php foreach ($styles as $style) { ?>
 <link href="<?php echo $style['href']; ?>" type="text/css" rel="<?php echo $style['rel']; ?>" media="<?php echo $style['media']; ?>" />

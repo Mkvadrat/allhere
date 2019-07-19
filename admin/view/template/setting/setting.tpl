@@ -144,6 +144,18 @@
                 </div>
               </div>
               <div class="form-group">
+                <label class="col-sm-2 control-label" for="input-delivery">Доставка (Карточка товара)</label>
+                <div class="col-sm-10">
+                  <textarea name="config_delivery" placeholder="Доставка (Карточка товара)" rows="5" id="input-delivery" class="form-control summernote"><?php echo $config_delivery; ?></textarea>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label" for="input-payment">Оплата (Карточка товара)</label>
+                <div class="col-sm-10">
+                  <textarea name="config_payment" placeholder="Оплата (Карточка товара)" rows="5" id="input-payment" class="form-control summernote"><?php echo $config_payment; ?></textarea>
+                </div>
+              </div>
+              <div class="form-group">
                 <label class="col-sm-2 control-label" for="input-geocode"><span data-toggle="tooltip" data-container="#tab-general" title="<?php echo $help_geocode; ?>"><?php echo $entry_geocode; ?></span></label>
                 <div class="col-sm-10">
                   <input type="text" name="config_geocode" value="<?php echo $config_geocode; ?>" placeholder="<?php echo $entry_geocode; ?>" id="input-geocode" class="form-control" />

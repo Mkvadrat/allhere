@@ -11,7 +11,7 @@
             <li class="breadcrumb-item"><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
       <?php
           }else{
-            echo '<li class="breadcrumb-item activ">'.$breadcrumb['text'] . '</li>'; 
+            echo '<li class="breadcrumb-item active" aria-current="page">'.$breadcrumb['text'] . '</li>'; 
           }		
           $i++;
         } 

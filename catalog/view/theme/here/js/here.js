@@ -22,6 +22,41 @@ function getURLVar(key) {
 	}
 }
 
+//callback form
+function sendForm() {
+    $.ajax({
+        url: 'index.php?route=extension/module/callback/sendForm',
+        type: 'post',
+        data: {
+            'name': $('#name').val(),
+            'phone': $('#phone').val(),
+            'message': $('#message').val(),
+        },
+        dataType: 'json',
+        success: function (data) {
+            if(data.success){
+                $(".warning").html('');
+                
+                $(".reset_input").val('');
+    
+                swal({
+                    title: data.success,
+                    text: "",
+                    timer: 1000,
+                    showConfirmButton: false
+                });
+    
+                $.fancybox.close();
+            }
+            
+            if(data.error){
+                var error = data.error;
+                $(".warning").html('<div class="warning">' + error.join("") + '</div>');
+            }
+        }
+    });
+}
+
 $(document).ready(function() {
 	// Highlight any found errors
 	$('.text-danger').each(function() {

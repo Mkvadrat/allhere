@@ -289,7 +289,10 @@ class ControllerProductProduct extends Controller {
 			$data['reward'] = $product_info['reward'];
 			$data['points'] = $product_info['points'];
 			$data['description'] = html_entity_decode($product_info['description'], ENT_QUOTES, 'UTF-8');
+			$data['description_mini'] = html_entity_decode($product_info['description_mini'], ENT_QUOTES, 'UTF-8');
 			$data['sticker'] = $this->getStickers($product_info['product_id']);
+			$data['delivery'] = html_entity_decode($this->config->get('config_delivery'), ENT_QUOTES, 'UTF-8');
+			$data['payment'] = html_entity_decode($this->config->get('config_payment'), ENT_QUOTES, 'UTF-8');
 
 			if ($product_info['quantity'] <= 0) {
 				$data['stock'] = $product_info['stock_status'];

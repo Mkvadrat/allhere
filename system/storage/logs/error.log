@@ -35,3 +35,14 @@
 2019-07-17 14:38:29 - PHP Warning:  Invalid argument supplied for foreach() in D:\OpenServer\domains\all-here.loc\system\engine\loader.php on line 58
 2019-07-17 14:39:54 - PHP Warning:  Invalid argument supplied for foreach() in D:\OpenServer\domains\all-here.loc\system\engine\loader.php on line 58
 2019-07-17 15:26:46 - PHP Notice:  Undefined index: separator in D:\OpenServer\domains\all-here.loc\catalog\view\theme\here\template\product\category.tpl on line 11
+2019-07-19 12:24:36 - PHP Notice:  Undefined variable: product in D:\OpenServer\domains\all-here.loc\catalog\view\theme\here\template\product\product.tpl on line 204
+2019-07-19 12:24:36 - PHP Notice:  Undefined variable: product in D:\OpenServer\domains\all-here.loc\catalog\view\theme\here\template\product\product.tpl on line 207
+2019-07-19 12:24:36 - PHP Notice:  Undefined variable: product in D:\OpenServer\domains\all-here.loc\catalog\view\theme\here\template\product\product.tpl on line 208
+2019-07-19 12:24:36 - PHP Notice:  Undefined variable: product in D:\OpenServer\domains\all-here.loc\catalog\view\theme\here\template\product\product.tpl on line 208
+2019-07-19 12:24:36 - PHP Notice:  Undefined variable: product in D:\OpenServer\domains\all-here.loc\catalog\view\theme\here\template\product\product.tpl on line 211
+2019-07-19 12:24:36 - PHP Notice:  Undefined variable: product in D:\OpenServer\domains\all-here.loc\catalog\view\theme\here\template\product\product.tpl on line 212
+2019-07-19 12:24:36 - PHP Notice:  Undefined variable: product in D:\OpenServer\domains\all-here.loc\catalog\view\theme\here\template\product\product.tpl on line 219
+2019-07-19 12:33:54 - PHP Notice:  Undefined variable: categories in D:\OpenServer\domains\all-here.loc\catalog\view\theme\here\template\product\special.tpl on line 28
+2019-07-19 12:33:54 - PHP Notice:  Undefined variable: categories in D:\OpenServer\domains\all-here.loc\catalog\view\theme\here\template\product\special.tpl on line 98
+2019-07-19 12:33:54 - PHP Notice:  Undefined variable: description_bottom in D:\OpenServer\domains\all-here.loc\catalog\view\theme\here\template\product\special.tpl on line 109
+2019-07-19 12:34:27 - PHP Notice:  Undefined variable: categories in D:\OpenServer\domains\all-here.loc\catalog\view\theme\here\template\product\special.tpl on line 83
