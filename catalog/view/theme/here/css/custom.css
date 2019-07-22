@@ -336,7 +336,8 @@ header {
 
 .main {
     padding-top: 75px;
-    min-height: calc(100vh - 216px);
+    min-height: calc(100vh - 216px - 30px);
+    margin-bottom: 30px;
 }
 
 .main::after {
@@ -1228,7 +1229,7 @@ hr {
 
 }
 
-.contact__form .form-inline .form-group {
+.form-inline .form-group {
     margin-bottom: 8px;
 }
 
