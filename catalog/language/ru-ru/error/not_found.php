@@ -5,7 +5,7 @@
 // *	@license	GNU General Public License version 3; see LICENSE.txt
 
 // Heading
-$_['heading_title'] = 'Запрашиваемая страница не найдена!';
+$_['heading_title'] = 'Ошибка 404';
 
 // Text
-$_['text_error']    = 'Запрашиваемая страница не найдена!';
+$_['text_error']    = 'Данная страница не найдена';
