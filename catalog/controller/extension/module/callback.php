@@ -13,7 +13,7 @@ class ControllerExtensionModuleCallback extends Controller {
 	
 		$site_url = $_SERVER['SERVER_NAME'];
 
-		if (($this->request->server['REQUEST_METHOD'] == 'POST') && $this->validate()) {
+		if (($this->request->server['REQUEST_METHOD'] == 'POST') && $this->validateForm()) {
 			$mail = new Mail();
 			$mail->protocol = $this->config->get('config_mail_protocol');
 			$mail->parameter = $this->config->get('config_mail_parameter');
@@ -99,7 +99,7 @@ class ControllerExtensionModuleCallback extends Controller {
 		$this->response->setOutput(json_encode($json));
 	}
 	
-	protected function validate() {
+	protected function validateForm() {
 		/*if ((utf8_strlen($this->request->post['name']) < 3) || (utf8_strlen($this->request->post['name']) > 32)) {
 			$this->error['name'] = $this->language->get('error_name');
 		}*/
@@ -124,12 +124,12 @@ class ControllerExtensionModuleCallback extends Controller {
 		return !$this->error;
 	}
 	
-	public function sendCustomer(){
+	public function sendContactForm(){
 		$json = array();
 	
 		$site_url = $_SERVER['SERVER_NAME'];
 
-		if (($this->request->server['REQUEST_METHOD'] == 'POST') && $this->validateCustomer()) {
+		if (($this->request->server['REQUEST_METHOD'] == 'POST') && $this->validateContactForm()) {
 			$mail = new Mail();
 			$mail->protocol = $this->config->get('config_mail_protocol');
 			$mail->parameter = $this->config->get('config_mail_parameter');
@@ -139,14 +139,14 @@ class ControllerExtensionModuleCallback extends Controller {
 			$mail->smtp_port = $this->config->get('config_mail_smtp_port');
 			$mail->smtp_timeout = $this->config->get('config_mail_smtp_timeout');
 			
-			$mail->setTo(array(0 => $this->config->get('config_email'), 1 => $this->request->post['email']));
+			$mail->setTo($this->config->get('config_email'));
 			$mail->setFrom($site_url);
 			$mail->setSender(html_entity_decode($this->request->post['name'], ENT_QUOTES, 'UTF-8'));
 			$mail->setSubject(html_entity_decode(sprintf($this->language->get('email_subject'), $this->request->post['name']), ENT_QUOTES, 'UTF-8'));
-			$mail->setText($this->request->post['email']);
+			$mail->setText($this->request->post['message']);
 			$this->load->model('extension/module/phe');
-			$phe = $this->model_extension_module_phe->getTemplate('cremail');
-			
+			$phe = $this->model_extension_module_phe->getTemplate('contact');
+
 			if ($phe && !empty($phe['message'])) { 	
 				$phe_data['store_name'] = $this->config->get('config_name');
 				$phe_data['url'] = $this->config->get('config_url');
@@ -166,12 +166,14 @@ class ControllerExtensionModuleCallback extends Controller {
 					'{firstname}',
 					'{telephone}',
 					'{email}',
+					'{enquiry}',
 				);
 				
 				$replace = array(
 					$this->request->post['name'],
 					$this->request->post['phone'],
-					$this->request->post['email']
+					$this->request->post['email'],
+					$this->request->post['message']
 				);
 				
 				$phe_data['subject'] = str_replace($search, $replace, html_entity_decode($phe['subject']));
@@ -179,7 +181,7 @@ class ControllerExtensionModuleCallback extends Controller {
 				
 				$html = $this->load->view('mail/phe', $phe_data);
 				
-				$mail->setTo(array(0 => $this->config->get('config_email'), 1 => $this->request->post['email']));
+				$mail->setTo($this->config->get('config_email'));
 				$mail->setSubject($phe_data['subject']);
 				$mail->setFrom($this->config->get('config_email'));
 				$mail->setSender($this->config->get('config_name'));
@@ -207,15 +209,15 @@ class ControllerExtensionModuleCallback extends Controller {
 			$json['error'][] = $this->language->get('error_phone');
 		}
 		
-		if (!preg_match("/^(?:[a-z0-9]+(?:[-_.]?[a-z0-9]+)?@[a-z0-9_.-]+(?:\.?[a-z0-9]+)?\.[a-z]{2,5})$/i", $this->request->post['email'])){
-			$json['error'][] = $this->language->get('error_email');
-		}
+		/*if ((utf8_strlen($this->request->post['message']) < 10) || (utf8_strlen($this->request->post['message']) > 3000)) {
+			$json['error'][] = $this->language->get('error_message');
+		}*/
 		
 		$this->response->addHeader('Content-Type: application/json');
 		$this->response->setOutput(json_encode($json));
 	}
 	
-	protected function validateCustomer() {
+	protected function validateContactForm() {
 		/*if ((utf8_strlen($this->request->post['name']) < 3) || (utf8_strlen($this->request->post['name']) > 32)) {
 			$this->error['name'] = $this->language->get('error_name');
 		}*/
@@ -223,10 +225,10 @@ class ControllerExtensionModuleCallback extends Controller {
 		if ((utf8_strlen($this->request->post['phone']) < 3) || (utf8_strlen($this->request->post['phone']) > 32)) {
 			$this->error['phone'] = $this->language->get('error_phone');
 		}
-		
-		if (!preg_match("/^(?:[a-z0-9]+(?:[-_.]?[a-z0-9]+)?@[a-z0-9_.-]+(?:\.?[a-z0-9]+)?\.[a-z]{2,5})$/i", $this->request->post['email'])){
-			$this->error['email'] = $this->language->get('error_email');
-		}
+
+		/*if ((utf8_strlen($this->request->post['message']) < 10) || (utf8_strlen($this->request->post['message']) > 3000)) {
+			$this->error['message'] = $this->language->get('error_message');
+		}*/
 
 		// Captcha
 		if ($this->config->get($this->config->get('config_captcha') . '_status') && in_array('contact', (array)$this->config->get('config_captcha_page'))) {

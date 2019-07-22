@@ -511,6 +511,24 @@ class ControllerSettingSetting extends Controller {
 		} else {
 			$data['config_payment'] = $this->config->get('config_payment');
 		}
+		
+		if (isset($this->request->post['config_cont_phone'])) {
+			$data['config_cont_phone'] = $this->request->post['config_cont_phone'];
+		} else {
+			$data['config_cont_phone'] = $this->config->get('config_cont_phone');
+		}
+		
+		if (isset($this->request->post['config_messenger'])) {
+			$data['config_messenger'] = $this->request->post['config_messenger'];
+		} else {
+			$data['config_messenger'] = $this->config->get('config_messenger');
+		}
+		
+		if (isset($this->request->post['config_cont_address'])) {
+			$data['config_cont_address'] = $this->request->post['config_cont_address'];
+		} else {
+			$data['config_cont_address'] = $this->config->get('config_cont_address');
+		}
 
 		if (isset($this->request->post['config_fax'])) {
 			$data['config_fax'] = $this->request->post['config_fax'];

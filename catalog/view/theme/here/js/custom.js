@@ -84,3 +84,38 @@ function sendForm() {
         }
     });
 }
+
+function sendContactForm() {
+    $.ajax({
+        url: 'index.php?route=extension/module/callback/sendContactForm',
+        type: 'post',
+        data: {
+            'name': $('#name').val(),
+            'phone': $('#phone').val(),
+            'email': $('#email').val(),
+            'message': $('#message').val(),
+        },
+        dataType: 'json',
+        success: function (data) {
+            if(data.success){
+                $(".warning").html('');
+                
+                $(".reset_input").val('');
+    
+                swal({
+                    title: data.success,
+                    text: "",
+                    timer: 1000,
+                    showConfirmButton: false
+                });
+    
+                $.fancybox.close();
+            }
+            
+            if(data.error){
+                var error = data.error;
+                $(".warning").html('<div class="warning">' + error.join("") + '</div>');
+            }
+        }
+    });
+}

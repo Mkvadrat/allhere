@@ -165,12 +165,6 @@ class ControllerDesignCustomMenu extends Controller {
 
 		$data['action'] = $this->url->link('design/custommenu', 'token=' . $this->session->data['token'], 'SSL');
 
-		if (isset($this->request->post['configcustommenu_custommenu'])) {
-			$data['configcustommenu_custommenu'] = $this->request->post['configcustommenu_custommenu'];
-		} else {
-			$data['configcustommenu_custommenu'] = $this->config->get('configcustommenu_custommenu');
-		}
-
 		$data['header'] = $this->load->controller('common/header');
 		$data['column_left'] = $this->load->controller('common/column_left');
 		$data['footer'] = $this->load->controller('common/footer');

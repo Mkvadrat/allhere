@@ -16,25 +16,8 @@
         <h3 class="panel-title"><i class="fa fa-list"></i> <?php echo $text_list; ?></h3>
 		<div class="col-sm-5 pull-right">
                   <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" id="form-ecustommenu" class="form-inline pull-right">
-				  <?php echo $text_custommenu_enable; ?>
-				  <label class="radio-inline">
-                    <?php if ($configcustommenu_custommenu_footer) { ?>
-                    <input type="radio" name="configcustommenu_custommenu_footer" value="1" checked="checked" />
-                    <?php echo $text_yes; ?>
-                    <?php } else { ?>
-                    <input type="radio" name="configcustommenu_custommenu_footer" value="1" />
-                    <?php echo $text_yes; ?>
-                    <?php } ?>
-                  </label>
-                  <label class="radio-inline">
-                    <?php if (!$configcustommenu_custommenu_footer) { ?>
-                    <input type="radio" name="configcustommenu_custommenu_footer" value="0" checked="checked" />
-                    <?php echo $text_no; ?>
-                    <?php } else { ?>
-                    <input type="radio" name="configcustommenu_custommenu_footer" value="0" />
-                    <?php echo $text_no; ?>
-                    <?php } ?>
-                  </label>
+
+
 		&nbsp;&nbsp;<button type="submit" form="form-ecustommenu" data-toggle="tooltip" title="<?php echo $button_save; ?>" class="btn btn-xs btn-success"><i class="fa fa-check"></i></button>
         </form>
 		</div>

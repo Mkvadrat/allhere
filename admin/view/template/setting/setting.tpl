@@ -156,6 +156,24 @@
                 </div>
               </div>
               <div class="form-group">
+                <label class="col-sm-2 control-label" for="input-cont-phone">Телефоны (Контакты)</label>
+                <div class="col-sm-10">
+                  <textarea name="config_cont_phone" placeholder="Телефоны (Контакты)" rows="5" id="input-cont-phone" class="form-control summernote"><?php echo $config_cont_phone; ?></textarea>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label" for="input-messenger">Мессенджеры (Контакты)</label>
+                <div class="col-sm-10">
+                  <textarea name="config_messenger" placeholder="Мессенджеры (Контакты)" rows="5" id="input-messenger" class="form-control summernote"><?php echo $config_messenger; ?></textarea>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label" for="input-cont-address">Адрес (Контакты)</label>
+                <div class="col-sm-10">
+                  <textarea name="config_cont_address" placeholder="Адрес (Контакты)" rows="5" id="input-cont-address" class="form-control summernote"><?php echo $config_cont_address; ?></textarea>
+                </div>
+              </div>
+              <div class="form-group">
                 <label class="col-sm-2 control-label" for="input-geocode"><span data-toggle="tooltip" data-container="#tab-general" title="<?php echo $help_geocode; ?>"><?php echo $entry_geocode; ?></span></label>
                 <div class="col-sm-10">
                   <input type="text" name="config_geocode" value="<?php echo $config_geocode; ?>" placeholder="<?php echo $entry_geocode; ?>" id="input-geocode" class="form-control" />

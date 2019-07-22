@@ -165,55 +165,54 @@ class ControllerCommonFooter extends Controller {
 	}
 	
 	public function getcustommenuLink($parent, $child = null) {
-		if ($this->config->get('configcustommenu_custommenu_footer')) {
-			$item = empty($child) ? $parent : $child;
-	
-			switch ($item['custommenu_type']) {
-				case 'category':
-					$route = 'product/category';
-	
-					if (!empty($child)) {
-						$args = 'path=' . $parent['link'] . '_' . $item['link'];
-					} else {
-						$args = 'path='.$item['link'];
-					}
-					break;
-				case 'product':
-					$route = 'product/product';
-					$args = 'product_id='.$item['link'];
-					break;
-				case 'manufacturer':
-					$route = 'product/manufacturer/info';
-					$args = 'manufacturer_id='.$item['link'];
-					break;
-				case 'information':
-					$route = 'information/information';
-					$args = 'information_id='.$item['link'];
-					break;
-				default:
-					$tmp = explode('&', str_replace('index.php?route=', '', $item['link']));
-	
-					if (!empty($tmp)) {
-						$route = $tmp[0];
-						unset($tmp[0]);
-						$args = (!empty($tmp)) ? implode('&', $tmp) : '';
-					}
-					else {
-						$route = $item['link'];
-						$args = '';
-					}
-	
-					break;
-			}
-	
-			$check = stripos($item['link'], 'http');
-			$checkbase = strpos($item['link'], '/');
-			if ( $check === 0 || $checkbase === 0 ) {
-				$link = $item['link'];
-			} else {
-				$link = $this->url->link($route, $args);
-			}
-			return $link;
+		$item = empty($child) ? $parent : $child;
+
+		switch ($item['custommenu_type']) {
+			case 'category':
+				$route = 'product/category';
+
+				if (!empty($child)) {
+					$args = 'path=' . $parent['link'] . '_' . $item['link'];
+				} else {
+					$args = 'path='.$item['link'];
+				}
+				break;
+			case 'product':
+				$route = 'product/product';
+				$args = 'product_id='.$item['link'];
+				break;
+			case 'manufacturer':
+				$route = 'product/manufacturer/info';
+				$args = 'manufacturer_id='.$item['link'];
+				break;
+			case 'information':
+				$route = 'information/information';
+				$args = 'information_id='.$item['link'];
+
+				break;
+			default:
+				$tmp = explode('&', str_replace('index.php?route=', '', $item['link']));
+
+				if (!empty($tmp)) {
+					$route = $tmp[0];
+					unset($tmp[0]);
+					$args = (!empty($tmp)) ? implode('&', $tmp) : '';
+				}
+				else {
+					$route = $item['link'];
+					$args = '';
+				}
+
+				break;
 		}
+
+		$check = stripos($item['link'], 'http');
+		$checkbase = strpos($item['link'], '/');
+		if ( $check === 0 || $checkbase === 0 ) {
+			$link = $item['link'];
+		} else {
+			$link = $this->url->link($route, $args);
+		}
+		return $link;
 	}
 }

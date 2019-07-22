@@ -15,7 +15,7 @@ class ControllerDesignCustomMenuFooter extends Controller {
 		$this->load->model('setting/setting');
 
 		if (($this->request->server['REQUEST_METHOD'] == 'POST') && $this->validateForm()) {
-			$this->model_setting_setting->editSetting('configcustommenu', $this->request->post);
+			$this->model_setting_setting->editSetting('configcustommenu_footer', $this->request->post);
 
 			$this->session->data['success'] = $this->language->get('text_success');
 

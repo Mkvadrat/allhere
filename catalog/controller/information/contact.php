@@ -109,6 +109,10 @@ class ControllerInformationContact extends Controller {
 		$data['fax'] = $this->config->get('config_fax');
 		$data['open'] = nl2br($this->config->get('config_open'));
 		$data['comment'] = $this->config->get('config_comment');
+		$data['cont_email'] = $this->config->get('config_email');
+		$data['cont_phone'] = html_entity_decode($this->config->get('config_cont_phone'), ENT_QUOTES, 'UTF-8');
+		$data['messenger'] = html_entity_decode($this->config->get('config_messenger'), ENT_QUOTES, 'UTF-8');
+		$data['cont_address'] = html_entity_decode($this->config->get('config_cont_address'), ENT_QUOTES, 'UTF-8');
 
 		$data['locations'] = array();
 

@@ -71,3 +71,40 @@
 2019-07-19 15:32:59 - PHP Notice:  Undefined index: href in D:\OpenServer\domains\all-here.loc\catalog\view\theme\here\template\product\search.tpl on line 33
 2019-07-19 15:32:59 - PHP Notice:  Undefined variable: description_bottom in D:\OpenServer\domains\all-here.loc\catalog\view\theme\here\template\product\search.tpl on line 109
 2019-07-19 15:33:04 - PHP Notice:  Undefined variable: description_bottom in D:\OpenServer\domains\all-here.loc\catalog\view\theme\here\template\product\search.tpl on line 95
+2019-07-22 9:54:08 - PHP Warning:  fopen(D:/OpenServer/domains/all-here.loc/system/storage/cache/cache.store.1563782048): failed to open stream: No such file or directory in D:\OpenServer\domains\all-here.loc\system\library\cache\file.php on line 54
+2019-07-22 9:54:09 - PHP Warning:  flock() expects parameter 1 to be resource, boolean given in D:\OpenServer\domains\all-here.loc\system\library\cache\file.php on line 56
+2019-07-22 9:54:09 - PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in D:\OpenServer\domains\all-here.loc\system\library\cache\file.php on line 58
+2019-07-22 9:54:09 - PHP Warning:  fflush() expects parameter 1 to be resource, boolean given in D:\OpenServer\domains\all-here.loc\system\library\cache\file.php on line 60
+2019-07-22 9:54:09 - PHP Warning:  flock() expects parameter 1 to be resource, boolean given in D:\OpenServer\domains\all-here.loc\system\library\cache\file.php on line 62
+2019-07-22 9:54:09 - PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in D:\OpenServer\domains\all-here.loc\system\library\cache\file.php on line 64
+2019-07-22 9:54:09 - PHP Warning:  fopen(D:/OpenServer/domains/all-here.loc/system/storage/cache/cache.order_status.1.1563782049): failed to open stream: No such file or directory in D:\OpenServer\domains\all-here.loc\system\library\cache\file.php on line 54
+2019-07-22 9:54:09 - PHP Warning:  flock() expects parameter 1 to be resource, boolean given in D:\OpenServer\domains\all-here.loc\system\library\cache\file.php on line 56
+2019-07-22 9:54:09 - PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in D:\OpenServer\domains\all-here.loc\system\library\cache\file.php on line 58
+2019-07-22 9:54:09 - PHP Warning:  fflush() expects parameter 1 to be resource, boolean given in D:\OpenServer\domains\all-here.loc\system\library\cache\file.php on line 60
+2019-07-22 9:54:09 - PHP Warning:  flock() expects parameter 1 to be resource, boolean given in D:\OpenServer\domains\all-here.loc\system\library\cache\file.php on line 62
+2019-07-22 9:54:09 - PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in D:\OpenServer\domains\all-here.loc\system\library\cache\file.php on line 64
+2019-07-22 9:57:17 - PHP Warning:  fopen(D:/OpenServer/domains/all-here.loc/system/storage/cache/cache.store.1563782237): failed to open stream: No such file or directory in D:\OpenServer\domains\all-here.loc\system\library\cache\file.php on line 54
+2019-07-22 9:57:17 - PHP Warning:  flock() expects parameter 1 to be resource, boolean given in D:\OpenServer\domains\all-here.loc\system\library\cache\file.php on line 56
+2019-07-22 9:57:17 - PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in D:\OpenServer\domains\all-here.loc\system\library\cache\file.php on line 58
+2019-07-22 9:57:17 - PHP Warning:  fflush() expects parameter 1 to be resource, boolean given in D:\OpenServer\domains\all-here.loc\system\library\cache\file.php on line 60
+2019-07-22 9:57:17 - PHP Warning:  flock() expects parameter 1 to be resource, boolean given in D:\OpenServer\domains\all-here.loc\system\library\cache\file.php on line 62
+2019-07-22 9:57:17 - PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in D:\OpenServer\domains\all-here.loc\system\library\cache\file.php on line 64
+2019-07-22 9:57:17 - PHP Warning:  fopen(D:/OpenServer/domains/all-here.loc/system/storage/cache/cache.order_status.1.1563782237): failed to open stream: No such file or directory in D:\OpenServer\domains\all-here.loc\system\library\cache\file.php on line 54
+2019-07-22 9:57:17 - PHP Warning:  flock() expects parameter 1 to be resource, boolean given in D:\OpenServer\domains\all-here.loc\system\library\cache\file.php on line 56
+2019-07-22 9:57:17 - PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in D:\OpenServer\domains\all-here.loc\system\library\cache\file.php on line 58
+2019-07-22 9:57:17 - PHP Warning:  fflush() expects parameter 1 to be resource, boolean given in D:\OpenServer\domains\all-here.loc\system\library\cache\file.php on line 60
+2019-07-22 9:57:17 - PHP Warning:  flock() expects parameter 1 to be resource, boolean given in D:\OpenServer\domains\all-here.loc\system\library\cache\file.php on line 62
+2019-07-22 9:57:17 - PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in D:\OpenServer\domains\all-here.loc\system\library\cache\file.php on line 64
+2019-07-22 9:57:19 - PHP Warning:  fopen(D:/OpenServer/domains/all-here.loc/system/storage/cache/cache.store.1563782239): failed to open stream: No such file or directory in D:\OpenServer\domains\all-here.loc\system\library\cache\file.php on line 54
+2019-07-22 9:57:19 - PHP Warning:  flock() expects parameter 1 to be resource, boolean given in D:\OpenServer\domains\all-here.loc\system\library\cache\file.php on line 56
+2019-07-22 9:57:19 - PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in D:\OpenServer\domains\all-here.loc\system\library\cache\file.php on line 58
+2019-07-22 9:57:19 - PHP Warning:  fflush() expects parameter 1 to be resource, boolean given in D:\OpenServer\domains\all-here.loc\system\library\cache\file.php on line 60
+2019-07-22 9:57:19 - PHP Warning:  flock() expects parameter 1 to be resource, boolean given in D:\OpenServer\domains\all-here.loc\system\library\cache\file.php on line 62
+2019-07-22 9:57:19 - PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in D:\OpenServer\domains\all-here.loc\system\library\cache\file.php on line 64
+2019-07-22 9:57:19 - PHP Warning:  fopen(D:/OpenServer/domains/all-here.loc/system/storage/cache/cache.order_status.1.1563782239): failed to open stream: No such file or directory in D:\OpenServer\domains\all-here.loc\system\library\cache\file.php on line 54
+2019-07-22 9:57:19 - PHP Warning:  flock() expects parameter 1 to be resource, boolean given in D:\OpenServer\domains\all-here.loc\system\library\cache\file.php on line 56
+2019-07-22 9:57:19 - PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in D:\OpenServer\domains\all-here.loc\system\library\cache\file.php on line 58
+2019-07-22 9:57:19 - PHP Warning:  fflush() expects parameter 1 to be resource, boolean given in D:\OpenServer\domains\all-here.loc\system\library\cache\file.php on line 60
+2019-07-22 9:57:19 - PHP Warning:  flock() expects parameter 1 to be resource, boolean given in D:\OpenServer\domains\all-here.loc\system\library\cache\file.php on line 62
+2019-07-22 9:57:19 - PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in D:\OpenServer\domains\all-here.loc\system\library\cache\file.php on line 64
+2019-07-22 12:51:44 - PHP Notice:  Undefined variable: footer_categories in D:\OpenServer\domains\all-here.loc\catalog\controller\common\footer.php on line 131
