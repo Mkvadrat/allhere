@@ -108,3 +108,5 @@
 2019-07-22 9:57:19 - PHP Warning:  flock() expects parameter 1 to be resource, boolean given in D:\OpenServer\domains\all-here.loc\system\library\cache\file.php on line 62
 2019-07-22 9:57:19 - PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in D:\OpenServer\domains\all-here.loc\system\library\cache\file.php on line 64
 2019-07-22 12:51:44 - PHP Notice:  Undefined variable: footer_categories in D:\OpenServer\domains\all-here.loc\catalog\controller\common\footer.php on line 131
+2019-07-22 17:14:59 - PHP Notice:  Undefined variable: categories in D:\OpenServer\domains\all-here.loc\catalog\view\theme\here\template\product\manufacturer_info.tpl on line 28
+2019-07-22 17:14:59 - PHP Notice:  Undefined variable: categories in D:\OpenServer\domains\all-here.loc\catalog\view\theme\here\template\product\manufacturer_info.tpl on line 98
