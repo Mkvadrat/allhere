@@ -418,7 +418,7 @@
         margin-top: 0;
     }
 
-    .fields__box .form-group:nth-child(1) {
+    /*.fields__box .form-group:nth-child(1) {
         order: 1;
     }
 
@@ -432,7 +432,7 @@
 
     .fields__box .form-group:nth-child(4) {
         order: 3;
-    }
+    }*/
 
     .product__gallery .owl-thumbs button {
         width: calc(100% / 4 - 16px);
