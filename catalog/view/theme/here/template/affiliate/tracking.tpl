@@ -29,7 +29,7 @@
       </div>
     </div>
     <div class="form-group">
-      <label class="col-sm-2 control-label" for="input-generator"><span data-toggle="tooltip" title="<?php echo $help_generator; ?>"><?php echo $entry_generator; ?></span></label>
+      <label class="col-sm-2 control-label" for="input-generator"><span  title="<?php echo $help_generator; ?>"><?php echo $entry_generator; ?></span></label>
       <div class="col-sm-10">
         <input type="text" name="product" value="" placeholder="<?php echo $entry_generator; ?>" id="input-generator" class="form-control" />
       </div>

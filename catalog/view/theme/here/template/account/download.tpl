@@ -39,7 +39,7 @@
         <td class="text-left"><?php echo $download['name']; ?></td>
         <td class="text-left"><?php echo $download['size']; ?></td>
         <td class="text-left"><?php echo $download['date_added']; ?></td>
-        <td><a href="<?php echo $download['href']; ?>" data-toggle="tooltip" title="<?php echo $button_download; ?>" class="btn btn-primary"><i class="fa fa-cloud-download"></i></a></td>
+        <td><a href="<?php echo $download['href']; ?>" title="<?php echo $button_download; ?>" class="btn btn-primary"><i class="fa fa-cloud-download"></i></a></td>
       </tr>
       <?php } ?>
     </tbody>

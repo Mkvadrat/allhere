@@ -85,13 +85,13 @@
       </div>
     </div>
     <div class="form-group">
-      <label class="col-sm-2 control-label" for="input-message"><span data-toggle="tooltip" title="<?php echo $help_message; ?>"><?php echo $entry_message; ?></span></label>
+      <label class="col-sm-2 control-label" for="input-message"><span title="<?php echo $help_message; ?>"><?php echo $entry_message; ?></span></label>
       <div class="col-sm-10">
         <textarea name="message" cols="40" rows="5" id="input-message" class="form-control"><?php echo $message; ?></textarea>
       </div>
     </div>
     <div class="form-group">
-      <label class="col-sm-2 control-label" for="input-amount"><span data-toggle="tooltip" title="<?php echo $help_amount; ?>"><?php echo $entry_amount; ?></span></label>
+      <label class="col-sm-2 control-label" for="input-amount"><span title="<?php echo $help_amount; ?>"><?php echo $entry_amount; ?></span></label>
       <div class="col-sm-10">
         <input type="text" name="amount" value="<?php echo $amount; ?>" id="input-amount" class="form-control" size="5" />
         <?php if ($error_amount) { ?>
