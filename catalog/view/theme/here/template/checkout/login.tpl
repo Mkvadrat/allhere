@@ -9,7 +9,7 @@
         <?php } else { ?>
         <input type="radio" name="account" value="register" />
         <?php } ?>
-        <?php echo $text_register; ?></label>
+        <?php echo $text_register; ?><span class="checkmark"></span></label>
     </div>
     <?php if ($checkout_guest) { ?>
     <div class="radio">
@@ -19,7 +19,7 @@
         <?php } else { ?>
         <input type="radio" name="account" value="guest" />
         <?php } ?>
-        <?php echo $text_guest; ?></label>
+        <?php echo $text_guest; ?><span class="checkmark"></span></label>
     </div>
     <?php } ?>
     <p><?php echo $text_register_account; ?></p>

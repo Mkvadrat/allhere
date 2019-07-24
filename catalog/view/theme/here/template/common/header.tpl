@@ -130,13 +130,14 @@
                     <a href="<?php echo $wishlist; ?>" id="wishlist-total"><span><?php echo $text_wishlist; ?></span></a>
                   </div>
                 </div>
-                <div class="log__block">
+                <div class="log__block0">
                   <div class="btn btn-circle">
                     <?php if ($logged) { ?>
                       <img src="/catalog/view/theme/here/image/user.svg" alt="user"/>
                       <a href="<?php echo $account; ?>"><span>Личный кабинет</span></a>/
                       <a href="<?php echo $logout; ?>"><span><?php echo $text_logout; ?></span></a>
                     <?php } else { ?>
+                      <img src="/catalog/view/theme/here/image/user.svg" alt="user"/>
                       <a href="<?php echo $login; ?>"><span>Войти</span></a>
                     <?php } ?>
                   </div>
@@ -145,4 +146,3 @@
             
             <?php echo $cart; ?>
           </div>
-         

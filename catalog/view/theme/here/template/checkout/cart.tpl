@@ -39,7 +39,7 @@
     <?php } ?>
   </h1>
   <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
-    <div class="table-responsive">
+    <div class="table-responsive table__checkout">
       <table class="table table-bordered">
         <thead>
           <tr>

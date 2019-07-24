@@ -15,7 +15,7 @@
     <?php echo $payment_method['title']; ?>
     <?php if ($payment_method['terms']) { ?>
     (<?php echo $payment_method['terms']; ?>)
-    <?php } ?>
+    <?php } ?><span class="checkmark"></span>
   </label>
 </div>
 <?php } ?>

@@ -28,17 +28,17 @@
           <?php if ($newsletter) { ?>
           <label class="radio-inline">
             <input type="radio" name="newsletter" value="1" checked="checked" />
-            <?php echo $text_yes; ?> </label>
+            <?php echo $text_yes; ?> <span class="checkmark"></span></label>
           <label class="radio-inline">
             <input type="radio" name="newsletter" value="0" />
-            <?php echo $text_no; ?></label>
+            <?php echo $text_no; ?><span class="checkmark"></span></label>
           <?php } else { ?>
           <label class="radio-inline">
             <input type="radio" name="newsletter" value="1" />
-            <?php echo $text_yes; ?> </label>
+            <?php echo $text_yes; ?> <span class="checkmark"></span></label>
           <label class="radio-inline">
             <input type="radio" name="newsletter" value="0" checked="checked" />
-            <?php echo $text_no; ?></label>
+            <?php echo $text_no; ?><span class="checkmark"></span></label>
           <?php } ?>
         </div>
       </div>

@@ -75,7 +75,7 @@
           <div class="checkbox">
             <label>
               <input type="checkbox" name="custom_field[<?php echo $custom_field['location']; ?>][<?php echo $custom_field['custom_field_id']; ?>][]" value="<?php echo $custom_field_value['custom_field_value_id']; ?>" />
-              <?php echo $custom_field_value['name']; ?></label>
+              <?php echo $custom_field_value['name']; ?><span class="checkmark"></span></label>
           </div>
           <?php } ?>
         </div>
@@ -222,7 +222,7 @@
           <div class="checkbox">
             <label>
               <input type="checkbox" name="custom_field[<?php echo $custom_field['location']; ?>][<?php echo $custom_field['custom_field_id']; ?>][]" value="<?php echo $custom_field_value['custom_field_value_id']; ?>" />
-              <?php echo $custom_field_value['name']; ?></label>
+              <?php echo $custom_field_value['name']; ?><span class="checkmark"></span></label>
           </div>
           <?php } ?>
         </div>
@@ -289,13 +289,13 @@
 <div class="checkbox">
   <label for="newsletter">
     <input type="checkbox" name="newsletter" value="1" id="newsletter" />
-    <?php echo $entry_newsletter; ?></label>
+    <?php echo $entry_newsletter; ?><span class="checkmark"></span></label>
 </div>
 <?php if ($shipping_required) { ?>
 <div class="checkbox">
   <label>
     <input type="checkbox" name="shipping_address" value="1" checked="checked" />
-    <?php echo $entry_shipping; ?></label>
+    <?php echo $entry_shipping; ?><span class="checkmark"></span></label>
 </div>
 <?php } ?>
 <?php if ($text_agree) { ?>

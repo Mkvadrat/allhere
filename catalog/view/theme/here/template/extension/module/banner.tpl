@@ -32,7 +32,7 @@ $(document).ready(function () {
   $('#banner<?php echo $module; ?>').owlCarousel({
       items: 1,
       nav: false,
-      // autoplay: true,
+      autoplay: true,
       loop: true,
       autoplayTimeout: 4000
   });

@@ -92,11 +92,11 @@
           <?php if (isset($address_custom_field[$custom_field['custom_field_id']]) && $custom_field_value['custom_field_value_id'] == $address_custom_field[$custom_field['custom_field_id']]) { ?>
           <label>
             <input type="radio" name="custom_field[<?php echo $custom_field['custom_field_id']; ?>]" value="<?php echo $custom_field_value['custom_field_value_id']; ?>" checked="checked" />
-            <?php echo $custom_field_value['name']; ?></label>
+            <?php echo $custom_field_value['name']; ?><span class="checkmark"></span></label>
           <?php } else { ?>
           <label>
             <input type="radio" name="custom_field[<?php echo $custom_field['custom_field_id']; ?>]" value="<?php echo $custom_field_value['custom_field_value_id']; ?>" />
-            <?php echo $custom_field_value['name']; ?></label>
+            <?php echo $custom_field_value['name']; ?><span class="checkmark"></span></label>
           <?php } ?>
         </div>
         <?php } ?>
@@ -114,11 +114,11 @@
           <?php if (isset($address_custom_field[$custom_field['custom_field_id']]) && in_array($custom_field_value['custom_field_value_id'], $address_custom_field[$custom_field['custom_field_id']])) { ?>
           <label>
             <input type="checkbox" name="custom_field[<?php echo $custom_field['custom_field_id']; ?>][]" value="<?php echo $custom_field_value['custom_field_value_id']; ?>" checked="checked" />
-            <?php echo $custom_field_value['name']; ?></label>
+            <?php echo $custom_field_value['name']; ?><span class="checkmark"></span></label>
           <?php } else { ?>
           <label>
             <input type="checkbox" name="custom_field[<?php echo $custom_field['custom_field_id']; ?>][]" value="<?php echo $custom_field_value['custom_field_value_id']; ?>" />
-            <?php echo $custom_field_value['name']; ?></label>
+            <?php echo $custom_field_value['name']; ?><span class="checkmark"></span></label>
           <?php } ?>
         </div>
         <?php } ?>

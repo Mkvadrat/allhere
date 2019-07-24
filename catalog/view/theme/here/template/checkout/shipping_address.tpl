@@ -3,7 +3,7 @@
   <div class="radio">
     <label>
       <input type="radio" name="shipping_address" value="existing" checked="checked" />
-      <?php echo $text_address_existing; ?></label>
+      <?php echo $text_address_existing; ?><span class="checkmark"></span></label>
   </div>
   <div id="shipping-existing">
     <select name="address_id" class="form-control">
@@ -19,7 +19,7 @@
   <div class="radio">
     <label>
       <input type="radio" name="shipping_address" value="new" />
-      <?php echo $text_address_new; ?></label>
+      <?php echo $text_address_new; ?><span class="checkmark"></span></label>
   </div>
   <?php } ?>
   <br />
@@ -112,7 +112,7 @@
           <div class="radio">
             <label>
               <input type="radio" name="custom_field[<?php echo $custom_field['custom_field_id']; ?>]" value="<?php echo $custom_field_value['custom_field_value_id']; ?>" />
-              <?php echo $custom_field_value['name']; ?></label>
+              <?php echo $custom_field_value['name']; ?><span class="checkmark"></span></label>
           </div>
           <?php } ?>
         </div>
@@ -128,7 +128,7 @@
           <div class="checkbox">
             <label>
               <input type="checkbox" name="custom_field[<?php echo $custom_field['custom_field_id']; ?>][]" value="<?php echo $custom_field_value['custom_field_value_id']; ?>" />
-              <?php echo $custom_field_value['name']; ?></label>
+              <?php echo $custom_field_value['name']; ?><span class="checkmark"></span></label>
           </div>
           <?php } ?>
         </div>

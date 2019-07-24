@@ -9,13 +9,13 @@
         <div class="radio">
           <label>
             <input type="radio" name="customer_group_id" value="<?php echo $customer_group['customer_group_id']; ?>" checked="checked" />
-            <?php echo $customer_group['name']; ?></label>
+            <?php echo $customer_group['name']; ?><span class="checkmark"></span></label>
         </div>
         <?php } else { ?>
         <div class="radio">
           <label>
             <input type="radio" name="customer_group_id" value="<?php echo $customer_group['customer_group_id']; ?>" />
-            <?php echo $customer_group['name']; ?></label>
+            <?php echo $customer_group['name']; ?><span class="checkmark"></span></label>
         </div>
         <?php } ?>
         <?php } ?>
@@ -66,11 +66,11 @@
             <?php if (isset($guest_custom_field[$custom_field['custom_field_id']]) && $custom_field_value['custom_field_value_id'] == $guest_custom_field[$custom_field['custom_field_id']]) { ?>
             <label>
               <input type="radio" name="custom_field[<?php echo $custom_field['location']; ?>][<?php echo $custom_field['custom_field_id']; ?>]" value="<?php echo $custom_field_value['custom_field_value_id']; ?>" checked="checked" />
-              <?php echo $custom_field_value['name']; ?></label>
+              <?php echo $custom_field_value['name']; ?><span class="checkmark"></span></label>
             <?php } else { ?>
             <label>
               <input type="radio" name="custom_field[<?php echo $custom_field['location']; ?>][<?php echo $custom_field['custom_field_id']; ?>]" value="<?php echo $custom_field_value['custom_field_value_id']; ?>" />
-              <?php echo $custom_field_value['name']; ?></label>
+              <?php echo $custom_field_value['name']; ?><span class="checkmark"></span></label>
             <?php } ?>
           </div>
           <?php } ?>
@@ -86,11 +86,11 @@
             <?php if (isset($guest_custom_field[$custom_field['custom_field_id']]) && in_array($custom_field_value['custom_field_value_id'], $guest_custom_field[$custom_field['custom_field_id']])) { ?>
             <label>
               <input type="checkbox" name="custom_field[<?php echo $custom_field['location']; ?>][<?php echo $custom_field['custom_field_id']; ?>][]" value="<?php echo $custom_field_value['custom_field_value_id']; ?>" checked="checked" />
-              <?php echo $custom_field_value['name']; ?></label>
+              <?php echo $custom_field_value['name']; ?><span class="checkmark"></span></label>
             <?php } else { ?>
             <label>
               <input type="checkbox" name="custom_field[<?php echo $custom_field['location']; ?>][<?php echo $custom_field['custom_field_id']; ?>][]" value="<?php echo $custom_field_value['custom_field_value_id']; ?>" />
-              <?php echo $custom_field_value['name']; ?></label>
+              <?php echo $custom_field_value['name']; ?><span class="checkmark"></span></label>
             <?php } ?>
           </div>
           <?php } ?>
@@ -218,11 +218,11 @@
             <?php if (isset($guest_custom_field[$custom_field['custom_field_id']]) && $custom_field_value['custom_field_value_id'] == $guest_custom_field[$custom_field['custom_field_id']]) { ?>
             <label>
               <input type="radio" name="custom_field[<?php echo $custom_field['location']; ?>][<?php echo $custom_field['custom_field_id']; ?>]" value="<?php echo $custom_field_value['custom_field_value_id']; ?>" checked="checked" />
-              <?php echo $custom_field_value['name']; ?></label>
+              <?php echo $custom_field_value['name']; ?><span class="checkmark"></span></label>
             <?php } else { ?>
             <label>
               <input type="radio" name="custom_field[<?php echo $custom_field['location']; ?>][<?php echo $custom_field['custom_field_id']; ?>]" value="<?php echo $custom_field_value['custom_field_value_id']; ?>" />
-              <?php echo $custom_field_value['name']; ?></label>
+              <?php echo $custom_field_value['name']; ?><span class="checkmark"></span></label>
             <?php } ?>
           </div>
           <?php } ?>
@@ -238,11 +238,11 @@
             <?php if (isset($guest_custom_field[$custom_field['custom_field_id']]) && in_array($custom_field_value['custom_field_value_id'], $guest_custom_field[$custom_field['custom_field_id']])) { ?>
             <label>
               <input type="checkbox" name="custom_field[<?php echo $custom_field['location']; ?>][<?php echo $custom_field['custom_field_id']; ?>][]" value="<?php echo $custom_field_value['custom_field_value_id']; ?>" checked="checked" />
-              <?php echo $custom_field_value['name']; ?></label>
+              <?php echo $custom_field_value['name']; ?><span class="checkmark"></span></label>
             <?php } else { ?>
             <label>
               <input type="checkbox" name="custom_field[<?php echo $custom_field['location']; ?>][<?php echo $custom_field['custom_field_id']; ?>][]" value="<?php echo $custom_field_value['custom_field_value_id']; ?>" />
-              <?php echo $custom_field_value['name']; ?></label>
+              <?php echo $custom_field_value['name']; ?><span class="checkmark"></span></label>
             <?php } ?>
           </div>
           <?php } ?>
@@ -314,7 +314,7 @@
     <?php } else { ?>
     <input type="checkbox" name="shipping_address" value="1" />
     <?php } ?>
-    <?php echo $entry_shipping; ?></label>
+    <?php echo $entry_shipping; ?><span class="checkmark"></span></label>
 </div>
 <?php } ?>
 <div class="buttons">

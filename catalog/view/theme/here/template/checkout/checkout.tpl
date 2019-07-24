@@ -29,7 +29,7 @@
   <div class="panel-group" id="accordion">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h4 class="panel-title"><?php echo $text_checkout_option; ?></h4>
+        <div class="panel-title"><?php echo $text_checkout_option; ?></div>
       </div>
       <div class="panel-collapse collapse" id="collapse-checkout-option">
         <div class="panel-body"></div>
@@ -38,7 +38,7 @@
     <?php if (!$logged && $account != 'guest') { ?>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h4 class="panel-title"><?php echo $text_checkout_account; ?></h4>
+        <div class="panel-title"><?php echo $text_checkout_account; ?></div>
       </div>
       <div class="panel-collapse collapse" id="collapse-payment-address">
         <div class="panel-body"></div>
@@ -47,7 +47,7 @@
     <?php } else { ?>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h4 class="panel-title"><?php echo $text_checkout_payment_address; ?></h4>
+        <div class="panel-title"><?php echo $text_checkout_payment_address; ?></div>
       </div>
       <div class="panel-collapse collapse" id="collapse-payment-address">
         <div class="panel-body"></div>
@@ -57,7 +57,7 @@
     <?php if ($shipping_required) { ?>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h4 class="panel-title"><?php echo $text_checkout_shipping_address; ?></h4>
+        <div class="panel-title"><?php echo $text_checkout_shipping_address; ?></div>
       </div>
       <div class="panel-collapse collapse" id="collapse-shipping-address">
         <div class="panel-body"></div>
@@ -65,7 +65,7 @@
     </div>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h4 class="panel-title"><?php echo $text_checkout_shipping_method; ?></h4>
+        <div class="panel-title"><?php echo $text_checkout_shipping_method; ?></div>
       </div>
       <div class="panel-collapse collapse" id="collapse-shipping-method">
         <div class="panel-body"></div>
@@ -74,7 +74,7 @@
     <?php } ?>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h4 class="panel-title"><?php echo $text_checkout_payment_method; ?></h4>
+        <div class="panel-title"><?php echo $text_checkout_payment_method; ?></div>
       </div>
       <div class="panel-collapse collapse" id="collapse-payment-method">
         <div class="panel-body"></div>
@@ -82,7 +82,7 @@
     </div>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h4 class="panel-title"><?php echo $text_checkout_confirm; ?></h4>
+        <div class="panel-title"><?php echo $text_checkout_confirm; ?></div>
       </div>
       <div class="panel-collapse collapse" id="collapse-checkout-confirm">
         <div class="panel-body"></div>
