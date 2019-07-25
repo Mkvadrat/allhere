@@ -1,21 +1,28 @@
 @media screen and (min-height: 768px) {
     .menu__left,
-    .menu__left #nav .dropdown__menu{
+    .menu__left #nav .dropdown__menu {
         height: calc(100vh - 75px);
     }
-    .menu__left #nav{
+
+    .menu__left #nav {
         height: inherit;
     }
-    .menu__left #nav > ul{
+
+    .menu__left #nav > ul {
         height: calc(100% - 42px);
         display: flex;
         align-items: stretch;
         flex-wrap: wrap;
         flex-direction: column;
     }
+
     .menu__left #nav > ul > li,
-    .menu__left #nav .dropdown__menu li{
+    .menu__left #nav .dropdown__menu li {
         height: calc(100% / 12);
+    }
+
+    #nav > ul > li.dropdown__parent:hover .dropdown__menu {
+        margin-left: 0;
     }
 }
 
@@ -434,7 +441,6 @@
     .fields__box .form-group:nth-child(4) {
         order: 3;
     }*/
-
     .product__gallery .owl-thumbs button {
         width: calc(100% / 4 - 16px);
         height: 60px;
