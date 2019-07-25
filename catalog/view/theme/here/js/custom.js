@@ -27,14 +27,17 @@ $(document).ready(function () {
         responsive: {
             0: {
                 items: 1,
+                startPosition: 2,
                 stagePadding: 50
             },
             768: {
                 items: 3,
+                startPosition: 2,
                 stagePadding: 75
             },
             1199: {
                 items: 4,
+                startPosition: 2,
                 stagePadding: 0
             }
         }
