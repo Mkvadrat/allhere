@@ -52,7 +52,7 @@ a:hover {
 
 .mburger {
     position: fixed;
-    right: 17px;
+    left: 17px;
     top: 28px;
     z-index: 1000;
     width: 30px;
@@ -514,6 +514,7 @@ footer .m2 img {
     transition: all .3s;
     width: 360px;
     overflow-x: hidden;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
 }
 
 #nav > ul > li.dropdown__parent:hover .dropdown__menu {
@@ -814,6 +815,12 @@ button:focus {
     height: auto;
     text-align: center;
     display: block;
+}
+
+.prod__img img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
 }
 
 .prod__name {

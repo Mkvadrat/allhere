@@ -64,22 +64,17 @@
     }
 
     .logo__block {
-        right: 60px;
         width: 125px;
         top: 11px;
         height: auto;
     }
 
     .top__phone {
-        padding: 11px 0 0 13px;
+        padding: 11px 0 0 46px;
     }
 
     .site__name {
         font-size: 12px;
-    }
-
-    .top__address {
-        right: 180px;
     }
 
     .footer__power {
@@ -154,7 +149,7 @@
 
 @media screen and (max-width: 767px) {
     .top__phone {
-        padding: 13px 0 0 0;
+        padding: 13px 0 0 46px;
     }
 
     .top__phone .phone a {
@@ -172,7 +167,6 @@
 
     .logo__block {
         width: 80px;
-        right: 55px;
         top: 7px;
     }
 
@@ -278,7 +272,7 @@
     }
 
     .cart__block {
-        width: 115px;
+        width: 100px;
         height: 32px;
         position: absolute;
         right: 0;
@@ -324,6 +318,10 @@
         padding: 15px 15px;
         text-align: left;
         align-items: flex-start;
+    }
+
+    .main__item a {
+        width: 100%;
     }
 
     .main__item .slider__img {
@@ -474,5 +472,15 @@
     .product__gallery .owl-thumbs {
         margin-left: -4px;
         margin-right: -4px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .content__header .btn-circle {
+        font-size: 11px;
+    }
+
+    #wishlist-total {
+        margin-right: 0;
     }
 }
