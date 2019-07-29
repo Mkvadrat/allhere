@@ -800,7 +800,9 @@ button:focus {
     line-height: 18px;
     text-align: right;
     color: #a7a7a7;
-    padding-right: 2px;
+    padding-right: 0;
+    display: flex;
+    align-items: center;
 }
 
 .prod__top .img__wish {
@@ -808,7 +810,9 @@ button:focus {
     height: 26px;
     background: transparent url("../image/star-prod.svg") no-repeat center;
     background-size: auto;
-    display: block;
+    display: inline-flex;
+    margin-left: 5px;
+    flex: none;
 }
 
 .prod__top.active .add__wish {

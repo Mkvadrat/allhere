@@ -129,8 +129,7 @@
               <div class="product__item col-12 col-sm-6 col-md-4 col-lg-3">
                   <div class="product__inner">
                       <button type="button" class="prod__top">
-                          <div class="add__wish" onclick="wishlist.add('<?php echo $product['product_id']; ?>');">Добавить в избранное</div>
-                          <span class="img__wish"></span>
+                          <div class="add__wish" onclick="wishlist.add('<?php echo $product['product_id']; ?>');">Добавить в избранное<span class="img__wish"></span></div>
                       </button>
                       <a href="<?php echo $product['href']; ?>" class="prod__img bg__img"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" /></a>
                       <a href="<?php echo $product['href']; ?>" class="prod__name"><?php echo $product['name']; ?></a>
