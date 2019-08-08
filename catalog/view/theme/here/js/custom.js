@@ -50,6 +50,20 @@ $(document).ready(function () {
         dots: false,
         thumbsPrerendered: true
     });
+
+
+    //menu
+    $('.dropdown__parent').hover(
+        function () {
+            $(this).find('.dropdown__menu').show();
+        },
+        function () {
+            $(this).find('.dropdown__menu').hide();
+        }
+    );
+
+
+
 });
 
 //callback form

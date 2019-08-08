@@ -21,7 +21,7 @@
         height: calc(100% / 12);
     }
 
-    #nav > ul > li.dropdown__parent:hover .dropdown__menu {
+    #nav > ul > li.dropdown__parent .dropdown__menu {
         margin-left: 0;
     }
 }
