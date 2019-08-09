@@ -113,6 +113,7 @@ class ControllerInformationContact extends Controller {
 		$data['cont_phone'] = html_entity_decode($this->config->get('config_cont_phone'), ENT_QUOTES, 'UTF-8');
 		$data['messenger'] = html_entity_decode($this->config->get('config_messenger'), ENT_QUOTES, 'UTF-8');
 		$data['cont_address'] = html_entity_decode($this->config->get('config_cont_address'), ENT_QUOTES, 'UTF-8');
+		$data['cont_documents'] = html_entity_decode($this->config->get('config_cont_documents'), ENT_QUOTES, 'UTF-8');
 
 		$data['locations'] = array();
 

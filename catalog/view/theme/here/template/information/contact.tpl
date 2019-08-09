@@ -49,6 +49,12 @@
               <div id="sevastopol" style="width:100%; height:320px"></div>
           </td>
       </tr>
+      <tr>
+          <td>Документы:</td>
+          <td>
+            <?php echo $cont_documents; ?>
+          </td>
+      </tr>
       </tbody>
   </table>
 
