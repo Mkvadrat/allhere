@@ -308,7 +308,7 @@ header {
 }
 
 .top__address {
-    padding: 15px 22px 0 0;
+    padding: 7px 22px 0 0;
 }
 
 .top__address p,
@@ -807,6 +807,22 @@ button:focus {
     align-items: center;
 }
 
+.prod__model{
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 18px;
+    color: #a7a7a7;
+}
+
+.product__info .prod__model{
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    text-align: left;
+    color: #2a2b24;
+    line-height: 19px;
+}
+
 .prod__top .img__wish {
     width: 26px;
     height: 26px;
@@ -851,13 +867,13 @@ button:focus {
     text-align: left;
     color: #000;
     text-decoration: none;
-    margin: 17px 0 7px;
+    margin: 0;
     display: inline-block;
 }
 
 .prod__action {
     display: flex;
-    align-items: flex-start;
+    align-items: flex-end;
     justify-content: space-between;
     flex-wrap: nowrap;
 }
@@ -886,7 +902,7 @@ button:focus {
 
 .prod__price .now__price strong {
     font-weight: bold;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 22px;
 }
 

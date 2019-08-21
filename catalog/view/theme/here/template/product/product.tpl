@@ -41,6 +41,7 @@
     </div>
       
     <div class="product__actions">
+      <div class="prod__model"><?php echo $model; ?></div>
       <div class="prod__price">
           <?php if (!$special) { ?>
           <div class="now__price"><strong><?php echo $price; ?></strong></div>
