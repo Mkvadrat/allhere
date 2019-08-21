@@ -473,6 +473,10 @@
         margin-left: -4px;
         margin-right: -4px;
     }
+
+    .oplata__block ul li {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 360px) {

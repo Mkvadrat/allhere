@@ -1810,3 +1810,37 @@ body .fancybox-image,
 body .fancybox-spaceball {
     background: #fff;
 }
+
+.oplata__block ul{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+.oplata__block ul li{
+    text-align: center;
+    width: 30%;
+    margin-top: 16px;
+}
+.oplata__block ul li div{
+    width: 130px;
+    height: 130px;
+    background: #ffed00;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.oplata__block ul li p{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #717171;
+}
+.oplata__block ul li img{
+    flex: none;
+}
