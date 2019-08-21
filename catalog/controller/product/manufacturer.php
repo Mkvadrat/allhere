@@ -278,6 +278,7 @@ class ControllerProductManufacturer extends Controller {
 					'thumb'       => $image,
 					'name'        => $result['name'],
 					'description' => $description,
+                    'model'       => $result['model'],
 					'price'       => $price,
 					'special'     => $special,
 					'tax'         => $tax,

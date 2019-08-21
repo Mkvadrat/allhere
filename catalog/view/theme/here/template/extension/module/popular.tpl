@@ -8,6 +8,7 @@
                   <div class="add__wish" onclick="wishlist.add('<?php echo $product['product_id']; ?>');">Добавить в избранное<span class="img__wish"></span></div>
               </button>
               <a href="<?php echo $product['href']; ?>" class="prod__img bg__img"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" /></a>
+              <div class="prod__model"><?php echo $product['model']; ?></div>
               <a href="<?php echo $product['href']; ?>" class="prod__name"><?php echo $product['name']; ?></a>
               <div class="prod__action">
                 <div class="prod__price">
@@ -27,4 +28,3 @@
     <?php } ?>
   </div>
 </div>
-  
