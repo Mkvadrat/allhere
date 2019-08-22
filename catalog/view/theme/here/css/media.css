@@ -445,6 +445,10 @@
         height: 60px;
     }
 
+    .main::after{
+        top: 48px;
+    }
+
 }
 
 @media screen and (max-width: 575px) {
