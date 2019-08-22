@@ -606,7 +606,7 @@ footer .m2 img {
     height: 17px;
     background: #ffed00;
     font-weight: normal;
-    font-size: 7px;
+    font-size: 9px;
     line-height: 9px;
     text-align: center;
     color: #707070;
@@ -616,13 +616,15 @@ footer .m2 img {
     border-radius: 50%;
     top: -14px;
     right: 5px;
+    top: 0;
+    right: -2px;
     flex: none;
 }
 
 .cart__header {
     height: 100%;
     display: flex;
-    padding: 16px 6px 5px 12px;
+    padding: 16px 6px 5px 0;
 }
 
 .search__block .form-control {
@@ -1556,6 +1558,7 @@ table tr:last-child td {
 .cart__header .btn-circle {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
 }
 
 .btn-circle span {

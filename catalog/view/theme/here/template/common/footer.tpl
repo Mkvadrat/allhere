@@ -33,7 +33,7 @@
 <?php if ($categories) { ?>
 <div class="d-none d-xl-block col-xl-3 p-0 menu__left">
     <nav id="nav" style="display: none;">
-        <div class="title__block">Категории товаров:</div>
+        <!--<div class="title__block">Категории товаров:</div>-->
         <ul>
             <?php foreach ($categories as $category) { ?>
             <?php if ($category['children']) { ?>
