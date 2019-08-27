@@ -53,7 +53,7 @@ $(document).ready(function () {
 
 
     //menu
-    $('.dropdown__parent').hover(
+/*    $('.dropdown__parent').hover(
         function () {
             $(this).find('.dropdown__menu').show();
         },
@@ -61,7 +61,7 @@ $(document).ready(function () {
             $(this).find('.dropdown__menu').hide();
         }
     );
-
+*/
 
 
 });

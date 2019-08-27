@@ -10,6 +10,7 @@
 
     .menu__left #nav > ul {
         height: calc(100% - 42px);
+        height: 100%;
         display: flex;
         align-items: stretch;
         flex-wrap: wrap;
@@ -444,6 +445,10 @@
         height: 60px;
     }
 
+    .main::after{
+        top: 48px;
+    }
+
 }
 
 @media screen and (max-width: 575px) {
@@ -472,6 +477,10 @@
     .product__gallery .owl-thumbs {
         margin-left: -4px;
         margin-right: -4px;
+    }
+
+    .oplata__block ul li {
+        width: 100%;
     }
 }
 
