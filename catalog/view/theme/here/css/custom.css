@@ -971,7 +971,7 @@ button:focus {
     margin-left: -3px;
 }
 
-.grid__actions > a:nth-child(2) .actions__item:hover .actions__title {
+.actions__products-2 .actions__item:hover .actions__title {
     margin: auto -3px -3px auto;
 }
 
