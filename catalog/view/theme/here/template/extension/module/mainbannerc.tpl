@@ -1,7 +1,6 @@
-<!--МОДУЛЬ 1-->
 <div class="actions__products">
-    <?php foreach ($mainbanneras as $banner) { ?>
     <div class="grid__actions row">
+        <?php foreach ($mainbanneras as $banner) { ?>
         <a href="#" class="col-12 col-md-3">
             <div class="actions__item bg__img" style="background-image: url('<?php echo $banner['image']; ?>')">
                 <div class="actions__title">
@@ -10,6 +9,6 @@
                 </div>
             </div>
         </a>
+        <?php } ?>
     </div>
-    <?php } ?>
 </div>
