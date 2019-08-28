@@ -1,4 +1,4 @@
-<div class="actions__products">
+<div class="actions__products actions__products-2">
     <div class="grid__actions row">
         <?php foreach ($mainbanneras as $banner) { ?>
         <a href="#" class="col-12 col-md-7">

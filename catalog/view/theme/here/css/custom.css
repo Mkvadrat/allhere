@@ -1007,12 +1007,12 @@ button:focus {
     width: 100%;
 }
 
-.actions__products:nth-child(1) .grid__actions > a .actions__title {
+.actions__products-1 .grid__actions > a .actions__title {
     width: auto;
     padding: 11px 34px 15px 14px;
 }
 
-.actions__products:nth-child(2) .grid__actions > a .actions__title {
+.actions__products-2 .grid__actions > a .actions__title {
     width: auto;
     position: absolute;
     bottom: 0;
