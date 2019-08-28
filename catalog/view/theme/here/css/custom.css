@@ -1849,3 +1849,14 @@ body .fancybox-spaceball {
 .oplata__block ul li img{
     flex: none;
 }
+.actions__products-1{
+    width: calc(41.666667% - 8px);
+    float: left;
+}
+.actions__products-2{
+    width: calc(58.333333% - 8px);
+    float: right;
+}
+.actions__products-3{
+    clear: both;
+}

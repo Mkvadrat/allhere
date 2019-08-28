@@ -449,6 +449,15 @@
         top: 48px;
     }
 
+    .actions__products-1,
+    .actions__products-2{
+        width: 100%;
+        float: none;
+    }
+    .actions__products-3{
+        clear: none;
+    }
+
 }
 
 @media screen and (max-width: 575px) {
